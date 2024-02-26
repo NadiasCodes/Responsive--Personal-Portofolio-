@@ -218,7 +218,7 @@ img {
 }
 .project-image {
   transition: 1s;
-  filter: brightness(80%);
+  filter: brightness(60%);
 }
 .project-image:hover {
   transform: scale(1.1);
@@ -226,13 +226,13 @@ img {
 }
 
 .project-link {
-  background-color: #baa29c8d;
+  background-color: #40322fe7;
   padding: 15px 15px;
   border-radius: 20px;
   font-size: 28px;
   margin: 6px;
   margin-top: 6px;
-  color: white;
+  color: #b29d8c;
   transition: all 300ms ease-in-out;
 }
 .project-link:hover {
