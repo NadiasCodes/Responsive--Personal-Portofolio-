@@ -1,5 +1,5 @@
 :root {
-  --main-font: "Poppins", sans-serif;
+  --main-font: "Montserrat", sans-serif;
   --second-font: "Great Vibes", cursive;
 }
 
@@ -16,6 +16,10 @@ html {
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   scroll-behavior: smooth;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Remove default margin in favour of better control in authored CSS */
@@ -43,9 +47,16 @@ a {
 
 /* Set core body defaults */
 body {
+  background-image: url("/src/images/home-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   min-height: 100vh;
+  width: 100vw;
   line-height: 1.5;
   margin: var(--header-height) 0 0 0;
+  font-family: var(--main-font);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -93,4 +104,104 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* container */
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-inline: auto;
+}
+
+/* main-section */
+
+h3 {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+h1,
+.developer {
+  font-family: var(--second-font);
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.header {
+  text-align: center;
+  background-color: rgba(208, 200, 200, 0.336);
+  border: 2px solid rgb(74, 69, 69);
+  padding: 45px 65px;
+  margin-top: 200px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.header-buttons {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+.main-button {
+  margin-right: 55px;
+  border: none;
+  box-shadow: 0 0 10px #000000b3;
+  font-size: 20px;
+  padding: 14px 20px;
+
+  background-color: #a08780;
+  border-radius: 22px;
+  color: white;
+  transition: all 500ms ease-in-out;
+  font-weight: 400;
+}
+
+.main-button:hover {
+  background-color: #d1c4c1;
+  color: black;
+  border: 28px;
+  font-weight: 500;
+}
+
+.main-button[data-type="inverted"] {
+  background-color: #d1c4c1;
+  color: black;
+}
+
+.main-button[data-type="inverted"]:hover {
+  background-color: #a08780;
+  color: white;
+}
 /* media queries */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}

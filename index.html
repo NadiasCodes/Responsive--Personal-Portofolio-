@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -33,6 +34,51 @@
     <title>Responsive personal portofolio</title>
   </head>
   <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Pojects</a>
+            <a class="nav-link" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="header">
+            <h3>Hi, i am </h3>
+            <h1 class="developer">Nadia Bouli</h1>
+            <h2>Junior Front-End Developer, based in Germany</h2>
+
+            <div class="header-buttons">
+              <a href="#"><button class="main-button">Projects</button></a>
+              <a href="#"><button class="main-button" data-type="inverted">Resume</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="src/java.js"></script>
   </body>
