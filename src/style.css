@@ -218,11 +218,11 @@ img {
 }
 .project-image {
   transition: 1s;
-  filter: brightness(60%);
+  
 }
 .project-image:hover {
   transform: scale(1.1);
-  filter: brightness(100%);
+ filter: drop-shadow(7px 7px 10px rgb(231, 210, 210)) invert(5%);
 }
 
 .project-link {
@@ -244,7 +244,7 @@ img {
   font-weight: 600;
   letter-spacing: 2px;
   margin-top: 10px;
-  background-color: #a39b9b2b;
+  background-color: #efeaea57;
   border-radius: 10px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
