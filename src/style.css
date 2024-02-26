@@ -1,26 +1,6 @@
 :root {
-  --header-height: 48px;
-  --font-semi: 600;
-
-  --main-color: #54494b;
-  --second-color: #14110f;
-
-  --body-font: "Poppins", sans-serif;
-
-  --big-font-size: 38px;
-  --h2-font-size: 20px;
-  --normal-font-size: 15px;
-  --smaller-font-size: 12px;
-
-  --mb-16: 16px;
-  --mb-32: 32px;
-  --mb-40: 40px;
-  --mb-48: 48px;
-
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
+  --main-font: "Poppins", sans-serif;
+  --second-font: "Great Vibes", cursive;
 }
 
 /* Box sizing rules */
@@ -52,9 +32,7 @@ dd {
   margin-block-end: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -68,9 +46,6 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  color: var(--second-color);
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -118,37 +93,4 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-/* Css Classes */
-.section-title {
-  position: relative;
-  font-size: var(--h2-font-size);
-  color: var(--main-color);
-  margin-top: var(--mb-32);
-  margin-bottom: var(--mb-48);
-  text-align: center;
-}
-
-
-.section-title::after{position: absolute;
-content: '';
-width: 64px;
-height: 2.88px;
-left: 0;
-right: 0;
-margin: auto;
-top:32px;
-background-color: var(--main-color);}
-
-.section{padding-top:48px;
-padding-bottom: 32px;}
-
-
-
-@media screen and (min-width: 968px) {
-  :root {
-    --big-font-size: 56px;
-    --h2-font-size: 32px;
-    --normal-font-size: 16px;
-    --smaller-font-size: 14px;
-  }
-}
+/* media queries */
