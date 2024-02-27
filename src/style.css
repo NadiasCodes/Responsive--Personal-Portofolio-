@@ -157,7 +157,7 @@ h1,
   background-color: var(--main-bg-transparent);
   border: 2px solid rgb(74, 69, 69);
   padding: 45px 65px;
-  margin-top: 70px;
+  margin-top: 50px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -239,6 +239,7 @@ img {
 }
 .project-link:hover {
   transform: scale(1.1);
+  filter: drop-shadow(5px 5px 3px rgb(152, 140, 109)) invert(2%);
 }
 
 .project-description {
