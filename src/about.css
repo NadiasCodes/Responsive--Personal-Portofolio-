@@ -138,12 +138,12 @@ textarea:not([rows]) {
   font-size: 50px;
   font-family: var(--second-font);
 }
-.about-me {
+.header {
   font-family: var(--second-font);
   font-size: 50px;
   font-weight: 500;
   border: 2px dotted var(--gold-color);
-  padding:15px;
+  padding: 15px;
 }
 .front-end {
   color: #585660;
@@ -184,6 +184,97 @@ textarea:not([rows]) {
   color: black;
   border: 28px;
   font-weight: 500;
+}
+
+/* Second section */
+.header {
+  margin-top: 70px;
+}
+
+.icon-skill {
+  font-size: 60px;
+}
+.icon-skill-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Third section */
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 20px;
+}
+
+.details {
+  margin: 20px;
+}
+
+.title-achiev {
+  text-decoration: underline;
+  color:#7b6c5f;
+}
+.achiev-text{font-family: var(--third-font);
+font-size: 21px;
+letter-spacing: 3px;}
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: rgba(255, 255, 255, 0.313);
+  padding: 25px 35px;
+  margin-top: 120px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  text-align: center;
+}
+
+.social-links {
+  font-size: 50px;
+  margin: 8px;
+  color: var(--gold-color);
+
+  background-color: var(--dark-brown-text-color);
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+.social-links:hover {
+  background-color: var(--gold-color);
+  color: var(--dark-brown-text-color);
+}
+
+.email {
+  display: inline-block;
+  position: relative;
+  color: var(--dark-brown-text-color);
+  margin-top: 13px;
+}
+.email:hover {
+  color: #47280d;
+}
+.email:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3e331c;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.email:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* media queries */
