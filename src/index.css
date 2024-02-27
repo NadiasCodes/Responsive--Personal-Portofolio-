@@ -1,10 +1,10 @@
 :root {
   --main-font: "Montserrat", sans-serif;
   --second-font: "Great Vibes", cursive;
-  --third-font:"Poppins", sans-serif;
+  --third-font: "Poppins", sans-serif;
   --main-bg-transparent: rgba(208, 200, 200, 0.336);
   --dark-brown-text-color: #1d1610;
-  --gold-color:#b29d8c;
+  --gold-color: #b29d8c;
 }
 
 /* Box sizing rules */
@@ -207,7 +207,7 @@ h1,
 }
 
 /* Second-Section - Home Page */
-
+h5{font-weight: 700;}
 img {
   border-radius: 25px;
   overflow: hidden;
@@ -220,11 +220,10 @@ img {
 }
 .project-image {
   transition: 1s;
-  
 }
 .project-image:hover {
   transform: scale(1.1);
- filter: drop-shadow(7px 7px 10px rgb(231, 210, 210)) invert(5%);
+  filter: drop-shadow(7px 7px 10px rgb(231, 210, 210)) invert(5%);
 }
 
 .project-link {
@@ -239,7 +238,7 @@ img {
 }
 .project-link:hover {
   transform: scale(1.1);
-  filter: drop-shadow(5px 5px 3px rgb(152, 140, 109)) invert(2%);
+  filter: drop-shadow(5px 5px 3px rgb(98, 91, 84)) invert(2%);
 }
 
 .project-description {
@@ -251,6 +250,8 @@ img {
   border-radius: 10px;
   font-weight: 500;
   font-family: var(--third-font);
+  text-align: center;
+  
 }
 
 /* Footer */

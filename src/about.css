@@ -221,6 +221,7 @@ textarea:not([rows]) {
   font-family: var(--third-font);
   font-size: 21px;
   letter-spacing: 3px;
+  
 }
 
 /* Footer */
