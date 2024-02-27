@@ -1,0 +1,218 @@
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --second-font: "Great Vibes", cursive;
+  --third-font: "Poppins", sans-serif;
+  --main-bg-transparent: rgba(208, 200, 200, 0.336);
+  --dark-brown-text-color: #1d1610;
+  --gold-color: #b29d8c;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Set core body defaults */
+body {
+  background-color: #efe9e3e8;
+  min-height: 100vh;
+  width: 100vw;
+  line-height: 1.5;
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--main-font);
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Responsive */
+
+.container-box {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-inline: auto;
+}
+
+/* Navigation */
+
+.navbar {
+  background-color: #b9a594e8;
+}
+.nav-link {
+  color: #1d1610;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+}
+.nav-link:hover {
+  color: rgb(136, 111, 66);
+}
+.navbar-brand {
+  font-family: var(--second-font);
+  font-size: 29px;
+}
+
+/* Main Section */
+.title {
+  font-size: 50px;
+  font-family: var(--second-font);
+}
+.about-me {
+  font-family: var(--second-font);
+  font-size: 50px;
+  font-weight: 500;
+  border: 2px dotted var(--gold-color);
+  padding:15px;
+}
+.front-end {
+  color: #585660;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.details-paragraph {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--third-font);
+}
+
+.main-content {
+  margin-top: 80px;
+  padding: 60px 20px;
+}
+
+.photo-content {
+  margin-top: 80px;
+}
+
+.main-button {
+  border: none;
+  box-shadow: 0 0 10px #000000b3;
+  font-size: 17px;
+  padding: 12px 17px;
+  background-color: #a08780;
+  border-radius: 20px;
+  color: white;
+  transition: all 500ms ease-in-out;
+  font-weight: 400;
+}
+
+.main-button:hover {
+  background-color: #d1c4c1;
+  color: black;
+  border: 28px;
+  font-weight: 500;
+}
+
+/* media queries */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
