@@ -1,10 +1,15 @@
 :root {
+  /* fonts */
   --main-font: "Montserrat", sans-serif;
   --second-font: "Great Vibes", cursive;
   --third-font: "Poppins", sans-serif;
-  --main-bg-transparent: rgba(208, 200, 200, 0.336);
-  --dark-brown-text-color: #1d1610;
-  --gold-color: #b29d8c;
+  --fourth-font: "Dancing Script", cursive;
+
+  /* colors */
+  --main-color: #161419;
+  --dark-brown: #1d1610;
+  --gold: #b29d8c;
+  --beige: #d7cabf;
 }
 
 /* Box sizing rules */
@@ -51,16 +56,14 @@ a {
 
 /* Set core body defaults */
 body {
-  background-image: url("/src/images/home-pic.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-color: #ffffff;
+
   min-height: 100vh;
   width: 100vw;
   line-height: 1.5;
-  margin: var(--header-height) 0 0 0;
   font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -122,19 +125,20 @@ textarea:not([rows]) {
 /* Navigation */
 
 .navbar {
-  background-color: #b9a594e8;
+  background-color: #161419;
 }
 .nav-link {
-  color: #1d1610;
+  color: #d1cac4;
   font-weight: 500;
   transition: all 200ms ease-in-out;
 }
 .nav-link:hover {
-  color: rgb(136, 111, 66);
+  color: rgb(156, 135, 96);
 }
 .navbar-brand {
   font-family: var(--second-font);
   font-size: 29px;
+  color: var(--gold);
 }
 
 /* Main-section - Home Page */
@@ -144,18 +148,24 @@ h3 {
   margin-bottom: 14px;
 }
 
+h5 {
+  opacity: 0.4;
+  font-size: 17px;
+  font-family: var(--third-font);
+}
+
 h1,
 .developer {
   font-family: var(--second-font);
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 13px;
+  color: var(--gold);
 }
 
 .header {
   text-align: center;
-  background-color: var(--main-bg-transparent);
-  border: 2px solid rgb(74, 69, 69);
+  border: 3px solid rgb(74, 69, 69);
   padding: 45px 65px;
   margin-top: 50px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -174,40 +184,40 @@ h1,
   font-size: 20px;
   padding: 14px 20px;
 
-  background-color: #a08780;
+  background-color: var(--main-color);
   border-radius: 22px;
-  color: white;
+  color: var(--beige);
   transition: all 500ms ease-in-out;
   font-weight: 400;
 }
 
 .main-button:hover {
-  background-color: #d1c4c1;
-  color: black;
+  background-color: var(--beige);
+  color: var(--main-color);
   border: 28px;
   font-weight: 500;
 }
 
 .main-button[data-type="inverted"] {
-  background-color: #d1c4c1;
-  color: black;
+  background-color: var(--beige);
+  color: var(--main-color);
 }
 
 .main-button[data-type="inverted"]:hover {
-  background-color: #a08780;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--beige);
 }
 .h2-subheader {
   margin-top: 60px;
   text-align: center;
   font-weight: 600;
-  color: var(--dark-brown-text-color);
-  background-color: var(--main-bg-transparent);
-  padding: 10px 10px;
+  font-family: var(--fourth-font);
+  font-size: 50px;
+  text-decoration: dashed;
 }
 
 /* Second-Section - Home Page */
-h5{font-weight: 700;}
+
 img {
   border-radius: 25px;
   overflow: hidden;
@@ -215,30 +225,30 @@ img {
 }
 .background-image {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-  background-color: rgba(207, 212, 212, 0.372);
+  background-color: #f9f9f9;
   border-radius: 8px;
+  border: 1px solid var(--beige);
 }
 .project-image {
   transition: 1s;
 }
 .project-image:hover {
   transform: scale(1.1);
-  filter: drop-shadow(7px 7px 10px rgb(231, 210, 210)) invert(5%);
 }
 
 .project-link {
-  background-color: #40322fe7;
+  background-color: var(--main-color);
   padding: 15px 15px;
   border-radius: 20px;
   font-size: 28px;
   margin: 6px;
   margin-top: 6px;
-  color: var(--gold-color);
+  color: var(--gold);
   transition: all 300ms ease-in-out;
 }
 .project-link:hover {
   transform: scale(1.1);
-  filter: drop-shadow(5px 5px 3px rgb(98, 91, 84)) invert(2%);
+  filter: drop-shadow(5px 5px 3px rgb(201, 178, 155)) invert(2%);
 }
 
 .project-description {
@@ -246,17 +256,18 @@ img {
   font-weight: 700;
   letter-spacing: 2px;
   margin-top: 10px;
-  background-color: #efeaea57;
+
   border-radius: 10px;
   font-weight: 500;
   font-family: var(--third-font);
   text-align: center;
-  
+  text-wrap: wrap;
 }
 
 /* Footer */
 footer {
-  background-color: rgba(255, 255, 255, 0.313);
+  border-top: 3px solid var(--gold);
+  background-color: var(--main-color);
   padding: 35px 65px;
   margin-top: 120px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -267,25 +278,26 @@ footer {
 .social-links {
   font-size: 50px;
   margin: 8px;
-  color: var(--gold-color);
 
-  background-color: var(--dark-brown-text-color);
+  color: var(--gold);
+
   border-radius: 10px;
   transition: all 500ms ease-in-out;
 }
 .social-links:hover {
-  background-color: var(--gold-color);
-  color: var(--dark-brown-text-color);
+  color: var(--main-color);
+  background-color: var(--beige);
 }
 
 .email {
   display: inline-block;
   position: relative;
-  color: var(--dark-brown-text-color);
+  color: var(--beige);
+
   margin-top: 13px;
 }
 .email:hover {
-  color: #47280d;
+  color: var(--gold);
 }
 .email:after {
   content: "";
@@ -295,7 +307,7 @@ footer {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #3e331c;
+  background-color: var(--gold);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -316,11 +328,17 @@ footer {
   .container {
     max-width: 768px;
   }
+  .background-image {
+    border: none;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
+  }
+  .background-image {
+    border: none;
   }
 }
 
@@ -328,10 +346,16 @@ footer {
   .container {
     max-width: 475px;
   }
+  .background-image {
+    border: none;
+  }
 }
 
 @media (max-width: 475px) {
   .container {
     width: 100%;
+  }
+  .background-image {
+    border: none;
   }
 }

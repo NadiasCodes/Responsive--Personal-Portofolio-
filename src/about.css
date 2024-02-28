@@ -1,10 +1,15 @@
 :root {
+  /* fonts */
   --main-font: "Montserrat", sans-serif;
   --second-font: "Great Vibes", cursive;
   --third-font: "Poppins", sans-serif;
-  --main-bg-transparent: rgba(208, 200, 200, 0.336);
-  --dark-brown-text-color: #1d1610;
-  --gold-color: #b29d8c;
+  --fourth-font: "Dancing Script", cursive;
+
+  /* colors */
+  --main-color: #161419;
+  --dark-brown: #1d1610;
+  --gold: #b29d8c;
+  --beige: #d7cabf;
 }
 
 /* Box sizing rules */
@@ -51,12 +56,14 @@ a {
 
 /* Set core body defaults */
 body {
-  background-color: #efe9e3e8;
+  background-color: #ffffff;
+
   min-height: 100vh;
   width: 100vw;
   line-height: 1.5;
-  margin: var(--header-height) 0 0 0;
   font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -118,19 +125,20 @@ textarea:not([rows]) {
 /* Navigation */
 
 .navbar {
-  background-color: #b9a594e8;
+  background-color: #161419;
 }
 .nav-link {
-  color: #1d1610;
+  color: #d1cac4;
   font-weight: 500;
   transition: all 200ms ease-in-out;
 }
 .nav-link:hover {
-  color: rgb(136, 111, 66);
+  color: rgb(156, 135, 96);
 }
 .navbar-brand {
   font-family: var(--second-font);
   font-size: 29px;
+  color: var(--gold);
 }
 
 /* Main Section */
@@ -142,7 +150,7 @@ textarea:not([rows]) {
   font-family: var(--second-font);
   font-size: 50px;
   font-weight: 500;
-  border: 2px dotted var(--gold-color);
+  border: 2px dotted var(--gold);
   padding: 15px;
   text-align: center;
   margin-top: 40px;
@@ -170,20 +178,21 @@ textarea:not([rows]) {
 }
 
 .main-button {
+  line-height: 3;
   border: none;
   box-shadow: 0 0 10px #000000b3;
-  font-size: 17px;
-  padding: 12px 17px;
-  background-color: #a08780;
-  border-radius: 20px;
-  color: white;
+  font-size: 18px;
+  padding: 14px 20px;
+  background-color: var(--main-color);
+  border-radius: 22px;
+  color: var(--beige);
   transition: all 500ms ease-in-out;
   font-weight: 400;
 }
 
 .main-button:hover {
-  background-color: #d1c4c1;
-  color: black;
+  background-color: var(--beige);
+  color: var(--main-color);
   border: 28px;
   font-weight: 500;
 }
@@ -216,18 +225,22 @@ textarea:not([rows]) {
 .title-achiev {
   text-decoration: underline;
   color: #7b6c5f;
+  font-size: 28px;
 }
 .achiev-text {
   font-family: var(--third-font);
   font-size: 21px;
   letter-spacing: 3px;
-  
 }
+.certificate-image{border: 3px solid rgb(207, 202, 202);
+width: fit-content;
+box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);;}
 
 /* Footer */
 footer {
-  background-color: rgba(255, 255, 255, 0.313);
-  padding: 25px 35px;
+  border-top: 3px solid var(--gold);
+  background-color: var(--main-color);
+  padding: 35px 65px;
   margin-top: 120px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -237,25 +250,26 @@ footer {
 .social-links {
   font-size: 50px;
   margin: 8px;
-  color: var(--gold-color);
 
-  background-color: var(--dark-brown-text-color);
+  color: var(--gold);
+
   border-radius: 10px;
   transition: all 500ms ease-in-out;
 }
 .social-links:hover {
-  background-color: var(--gold-color);
-  color: var(--dark-brown-text-color);
+  color: var(--main-color);
+  background-color: var(--beige);
 }
 
 .email {
   display: inline-block;
   position: relative;
-  color: var(--dark-brown-text-color);
+  color: var(--beige);
+
   margin-top: 13px;
 }
 .email:hover {
-  color: #47280d;
+  color: var(--gold);
 }
 .email:after {
   content: "";
@@ -265,7 +279,7 @@ footer {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #3e331c;
+  background-color: var(--gold);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -295,6 +309,10 @@ footer {
   .title {
     margin-top: 0 auto;
   }
+  .achiev-text {
+    font-size: 18px;
+  }
+  .title-achiev{font-size: 22px;}
 }
 
 @media (max-width: 640px) {
@@ -318,6 +336,7 @@ footer {
   .achiev-text {
     font-size: 15px;
   }
+  .title-achiev{font-size: 20px;}
 }
 
 @media (max-width: 475px) {
@@ -340,4 +359,5 @@ footer {
   .achiev-text {
     font-size: 15px;
   }
+  .title-achiev{font-size: 20px;}
 }
