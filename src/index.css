@@ -231,9 +231,11 @@ img {
 }
 .project-image {
   transition: 1s;
+  filter: grayscale(100%);
 }
 .project-image:hover {
   transform: scale(1.1);
+  filter: none;
 }
 
 .project-link {
