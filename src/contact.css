@@ -261,8 +261,8 @@ textarea:not([rows]) {
 }
 
 .contact-text {
-  font-size: 27px;
-  font-family: var(--fourth-font);
+  font-size: 45px;
+  font-family: var(--second-font);
   text-align: center;
   color:var(--gold);
      
@@ -278,7 +278,7 @@ font-size: 20px;}
   font-size: 27px;
   color: var(--gold);
   font-weight: 700;
-  font-family: var(--fourth-font);
+  font-family: var(--third-font);
 }
 .double-arrow {
   font-size: 20px;

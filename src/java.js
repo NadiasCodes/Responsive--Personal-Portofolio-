@@ -32,10 +32,14 @@ ScrollReveal({
 
 ScrollReveal().reveal(".header", { delay: 500 });
 ScrollReveal().reveal(".h2-subheader, .links-title", { delay: 800 });
-ScrollReveal().reveal(".images-reveal", { delay: 1500, origin:'left' });
+ScrollReveal().reveal(".images-reveal", { delay: 1500, origin: "left" });
 ScrollReveal().reveal(".main-content", { delay: 600, origin: "left" });
 ScrollReveal().reveal(".profile", { delay: 600, origin: "top" });
 ScrollReveal().reveal(".skills-reveal", { delay: 700, origin: "left" });
 ScrollReveal().reveal(".achievements", { delay: 200, origin: "left" });
 ScrollReveal().reveal(".swiper-wrapper", { delay: 600, origin: "left" });
 ScrollReveal().reveal(".swiper", { delay: 600, origin: "left" });
+
+ScrollReveal().reveal(".contact-header", { delay: 500, origin: "top" });
+ScrollReveal().reveal(".contact-details", { delay: 680, origin: "left" });
+ScrollReveal().reveal(".contact-links-h5, .arrow-reveal", { delay: 720, origin: "left" });
