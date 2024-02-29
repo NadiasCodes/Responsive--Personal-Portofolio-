@@ -290,8 +290,9 @@ footer {
     color: var(--gold);
   }
   .project-image {
-  width: 900px;
-}}
+    width: 900px;
+  }
+}
 
 @media (max-width: 768px) {
   .container {
@@ -302,8 +303,8 @@ footer {
     color: var(--gold);
   }
   .project-image {
-  width: 650px;
-}
+    width: 650px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -314,9 +315,13 @@ footer {
   .swiper-button-prev {
     color: var(--gold);
   }
-    .project-image {
-  width: 470px;
-}
+  .project-image {
+    width: 470px;
+  }
+  .header {
+    font-size: 30px;
+    padding: 7px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -327,5 +332,4 @@ footer {
   .swiper-button-prev {
     color: var(--gold);
   }
- 
 }
