@@ -218,11 +218,7 @@ textarea:not([rows]) {
   transition: 1s;
 }
 
-.grid {
-  grid-row: 1/4;
-  display: grid;
-  grid-template-rows: subgrid;
-}
+
 
 .project-image:hover {
   transform: scale(1.1);
@@ -236,8 +232,8 @@ textarea:not([rows]) {
   font-weight: 500;
   font-family: var(--third-font);
   text-align: center;
-  text-wrap: wrap;
-  text-align: center;
+  white-space: normal;
+ 
 }
 .sources {
   text-decoration: underline;
