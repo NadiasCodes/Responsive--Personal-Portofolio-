@@ -140,6 +140,7 @@ textarea:not([rows]) {
   font-size: 29px;
   color: var(--gold);
 }
+.navbar-brand:hover{color:#a79181;}
 
 /* Main Section */
 .title {
