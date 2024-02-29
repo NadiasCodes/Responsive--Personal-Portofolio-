@@ -216,11 +216,44 @@ textarea:not([rows]) {
 }
 .project-image {
   transition: 1s;
-  
 }
+
+.grid {
+  grid-row: 1/4;
+  display: grid;
+  grid-template-rows: subgrid;
+}
+
 .project-image:hover {
   transform: scale(1.1);
- 
+}
+.project-description {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: var(--third-font);
+  text-align: center;
+  text-wrap: wrap;
+  text-align: center;
+}
+.sources {
+  text-decoration: underline;
+  color: var(--gold);
+  font-size: 17px;
+  font-family: var(--fourth-font);
+}
+p a,
+.future-project-ideas-details {
+  color: var(--main-color);
+  font-size: 17px;
+  transition: all 320ms ease-in-out;
+  font-family: var(--third-font);
+}
+p a:hover {
+  color: var(--beige);
 }
 
 /* Footer */
