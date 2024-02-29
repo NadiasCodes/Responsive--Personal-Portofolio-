@@ -9,6 +9,8 @@ let swiperProject = new Swiper(".projects-container", {
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+    Keyboard:true,
   },
 
   breakpoints: {
