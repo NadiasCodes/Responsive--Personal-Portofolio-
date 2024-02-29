@@ -1,18 +1,12 @@
 // Swipper
 
 let swiperProject = new Swiper(".projects-container", {
-  loop: true,
-  spaceBetween: 480,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  spaceBetween: 10,
+  cssMode: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    Keyboard:true,
   },
-
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -24,7 +18,7 @@ let swiperProject = new Swiper(".projects-container", {
     },
     1024: {
       slidesPerView: 1,
-      spaceBetween: 480,
+      spaceBetween: 60,
     },
   },
 });
