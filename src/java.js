@@ -22,3 +22,18 @@ let swiperProject = new Swiper(".projects-container", {
     },
   },
 });
+
+//Scroll-Reveal animation
+ScrollReveal({
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+});
+
+ScrollReveal().reveal(".header, .swiper", { delay: 500 });
+ScrollReveal().reveal(".h2-subheader, .links-title", { delay: 800 });
+ScrollReveal().reveal(".images-reveal", { delay: 1500, origin:'left' });
+ScrollReveal().reveal(".main-content", { delay: 600, origin: "left" });
+ScrollReveal().reveal(".profile", { delay: 600, origin: "top" });
+ScrollReveal().reveal(".skills-reveal", { delay: 800, origin: "left" });
+ScrollReveal().reveal(".achievements", { delay: 200, origin: "left" });
