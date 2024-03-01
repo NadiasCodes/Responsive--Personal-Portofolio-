@@ -139,6 +139,25 @@ textarea:not([rows]) {
 
 }
 
+
+/* Scroll Up */
+.scrollup {
+  position: fixed;
+  right: 16px;
+  bottom: 50px;
+
+  display: inline-flex;
+  font-size: 20px;
+  color: var(--gold);
+  z-index: 10;
+  transition: bottom 0.3s, transform 0.3s;
+}
+
+.scrollup:hover {
+  transform: translateY(-4px);
+}
+
+
 /* Navigation */
 
 .navbar {
