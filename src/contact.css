@@ -122,6 +122,21 @@ textarea:not([rows]) {
   margin-inline: auto;
 }
 
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 8px;
+  background-color: hsl(207, 4%, 65%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b59e8abc;
+}
+
 /* Navigation */
 
 .navbar {
@@ -234,7 +249,6 @@ textarea:not([rows]) {
   font-family: var(--third-font);
   font-size: 21px;
   letter-spacing: 3px;
-   
 }
 .certificate-image {
   border: 3px solid rgb(207, 202, 202);
@@ -264,11 +278,12 @@ textarea:not([rows]) {
   font-size: 45px;
   font-family: var(--second-font);
   text-align: center;
-  color:var(--gold);
-     
+  color: var(--gold);
 }
-.second-paragraph{margin-top: 10px;
-font-size: 20px;}
+.second-paragraph {
+  margin-top: 10px;
+  font-size: 20px;
+}
 
 .contact-links {
   text-align: center;
@@ -283,8 +298,6 @@ font-size: 20px;}
 .double-arrow {
   font-size: 20px;
 }
-
-
 
 /* Footer */
 footer {
@@ -356,41 +369,13 @@ footer {
   .container {
     max-width: 640px;
   }
-  .title {
-    margin-top: 0 auto;
-  }
-  .achiev-text {
-    font-size: 18px;
-  }
-  .title-achiev {
-    font-size: 22px;
-  }
 }
 
 @media (max-width: 640px) {
   .container {
     max-width: 475px;
   }
-  .title {
-    margin-top: 0 auto;
-  }
-  .main-button {
-    display: block;
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
-  }
-  .profile {
-    margin: 0;
-    padding: 0;
-  }
 
-  .achiev-text {
-    font-size: 15px;
-  }
-  .title-achiev {
-    font-size: 20px;
-  }
   .contact-header {
     font-size: 70px;
     margin-top: 50px;
@@ -399,9 +384,10 @@ footer {
     margin-top: 30px;
   }
   .contact-text {
+    font-size: 35px;
+  }
+  .contact-links-h5 {
     font-size: 20px;
-    
-    
   }
 }
 
@@ -409,28 +395,16 @@ footer {
   .container {
     width: 100%;
   }
-  .title {
-    margin-top: 0 auto;
-  }
-  .main-button {
-    display: block;
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
-  }
-  .profile {
-    margin: 0;
-    padding: 0;
-  }
-  .achiev-text {
-    font-size: 15px;
-  }
-  .title-achiev {
-    font-size: 20px;
-  }
-  .contact-header {
+   {
     font-size: 70px;
     margin-top: 50px;
+  }
+
+  .contact-text {
+    font-size: 35px;
+  }
+  .contact-links-h5 {
+    font-size: 20px;
   }
   footer {
     margin-top: 30px;

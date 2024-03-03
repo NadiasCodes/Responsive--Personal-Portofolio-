@@ -117,6 +117,40 @@ textarea:not([rows]) {
   margin-inline: auto;
 }
 
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 8px;
+  background-color: hsl(207, 4%, 65%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color:#b59e8abc;
+
+}
+
+/* Scroll Up */
+.scrollup {
+  position: fixed;
+  right: 16px;
+  bottom: 50px;
+
+  display: inline-flex;
+  font-size: 20px;
+  color: var(--gold);
+  z-index: 10;
+  transition: bottom 0.3s, transform 0.3s;
+}
+
+.scrollup:hover {
+  transform: translateY(-4px);
+}
+
+
 /* Navigation */
 
 .navbar {
@@ -218,8 +252,6 @@ textarea:not([rows]) {
   transition: 1s;
 }
 
-
-
 .project-image:hover {
   transform: scale(1.1);
 }
@@ -233,7 +265,6 @@ textarea:not([rows]) {
   font-family: var(--third-font);
   text-align: center;
   white-space: normal;
- 
 }
 .sources {
   text-decoration: underline;
