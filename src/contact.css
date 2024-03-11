@@ -159,102 +159,6 @@ textarea:not([rows]) {
   color: #a79181;
 }
 
-/* Main Section */
-.title {
-  font-size: 50px;
-  font-family: var(--second-font);
-}
-.header {
-  font-family: var(--second-font);
-  font-size: 50px;
-  font-weight: 500;
-  border: 2px dotted var(--gold);
-  padding: 15px;
-  text-align: center;
-  margin-top: 40px;
-}
-.front-end {
-  color: #585660;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.details-paragraph {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: var(--third-font);
-}
-
-.main-content {
-  margin-top: 80px;
-  padding: 60px 20px;
-}
-
-.photo-content {
-  margin-top: 80px;
-}
-
-.main-button {
-  line-height: 3;
-  border: none;
-  box-shadow: 0 0 10px #000000b3;
-  font-size: 18px;
-  padding: 14px 20px;
-  background-color: var(--main-color);
-  border-radius: 22px;
-  color: var(--beige);
-  transition: all 500ms ease-in-out;
-  font-weight: 400;
-}
-
-.main-button:hover {
-  background-color: var(--beige);
-  color: var(--main-color);
-  border: 28px;
-  font-weight: 500;
-}
-
-/* Second section */
-.header {
-  margin-top: 70px;
-}
-
-.icon-skill {
-  font-size: 60px;
-}
-.icon-skill-text {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-/* Third section */
-
-.achievements {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px 20px;
-}
-
-.details {
-  margin: 20px;
-}
-
-.title-achiev {
-  text-decoration: underline;
-  color: #7b6c5f;
-  font-size: 28px;
-}
-.achiev-text {
-  font-family: var(--third-font);
-  font-size: 21px;
-  letter-spacing: 3px;
-}
-.certificate-image {
-  border: 3px solid rgb(207, 202, 202);
-  width: fit-content;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-}
 
 /* Contact-Page */
 .contact-header {
@@ -290,13 +194,15 @@ textarea:not([rows]) {
   margin-top: 50px;
 }
 .contact-links-h5 {
-  font-size: 27px;
-  color: var(--gold);
-  font-weight: 700;
-  font-family: var(--third-font);
-}
-.double-arrow {
   font-size: 20px;
+  color: var(--gold);
+  font-weight: 500;
+  font-family: var(--third-font);
+  text-align: center;
+}
+.arrow-reveal {
+  font-size: 20px;
+  color: var(--gold);
 }
 
 /* Footer */
