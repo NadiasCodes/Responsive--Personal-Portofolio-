@@ -129,8 +129,7 @@ textarea:not([rows]) {
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color:#b59e8abc;
-
+  background-color: #b59e8abc;
 }
 
 /* Scroll Up */
@@ -149,7 +148,6 @@ textarea:not([rows]) {
 .scrollup:hover {
   transform: translateY(-4px);
 }
-
 
 /* Navigation */
 
